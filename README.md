@@ -33,7 +33,7 @@ This project demonstrates CRUD operations, validation, relationships, error hand
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/KGOPOTSOMANGENA/library-api.git
 cd library-api
 
 ### 2. install dependencies and run the project 
