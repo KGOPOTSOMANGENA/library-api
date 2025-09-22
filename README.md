@@ -45,11 +45,48 @@ Api will run at http://localhost:5000
 
 ***End points***
 
-Method |Endpoint |Description
-POST   |/authors |Create new author
-GET    |/authors |	Get all authors
-GET	   |/authors/:id |	Get author by ID
-PUT    |/authors/:id |	Update author
-DELETE |/authors/:id |	Delete author
+Method |Endpoint     |Description
+POST   |/authors     |Create new author
+GET    |/authors     |Get all authors
+GET	   |/authors/:id |Get author by ID
+PUT    |/authors/:id |Update author
+DELETE |/authors/:id |Delete author
 GET	   |/authors/:id/books |	Get books by this author
 
+Example Request (POST /authors)
+{
+  "name": "George Orwell",
+  "birthYear": 1903
+}
+
+Example Response
+{
+  "id": 1,
+  "name": "George Orwell",
+  "birthYear": 1903
+}
+
+
+***End points***
+
+Method	|Endpoint	|Description
+POST	  |books	  |Create new book
+GET	    |books	  |Get all books
+GET	    |books/:id|Get book by ID
+PUT	    |books/:id|Update book
+DELETE	|books/:id|Delete book
+
+Example Request (POST /books)
+{
+  "title": "1984",
+  "year": 1949,
+  "authorId": 1
+}
+
+Example Response
+{
+  "id": 1,
+  "title": "1984",
+  "year": 1949,
+  "authorId": 1
+}
